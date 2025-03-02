@@ -11,13 +11,12 @@ version = "2.0.1"
 keywords = ["experience", "app", "usd"]
 
 [dependencies]
-"py_ext" = {}
-"py_ui" = {}
-"omni.kit.debug.vscode" = {} # VSCode debugging support
+"keybindings" = {}
+# "omni.kit.debug.vscode" = {} # VSCode debugging support
 
 # Isaac Sim extensions
 "isaacsim.app.about" = {}
-"isaacsim.asset.browser" = {}
+# "isaacsim.asset.browser" = {}
 "isaacsim.core.api" = {}
 "isaacsim.core.cloner" = {}
 "isaacsim.core.nodes" = {}
@@ -51,8 +50,8 @@ keywords = ["experience", "app", "usd"]
 "omni.replicator.core" = {}
 "omni.replicator.replicator_yaml" = {}
 "omni.syntheticdata" = {}
-"semantics.schema.editor" = {}
-"semantics.schema.property" = {}
+# "semantics.schema.editor" = {}
+# "semantics.schema.property" = {}
 
 # Kit based editor extensions
 "omni.anim.curve.core" = {}
@@ -97,11 +96,11 @@ keywords = ["experience", "app", "usd"]
 "omni.kit.window.status_bar" = {}
 "omni.kit.window.toolbar" = {}
 "omni.physx.stageupdate" = {}
-"omni.rtx.settings.core" = {}
-"omni.uiaudio" = {}
-"omni.usd.metrics.assembler.ui" = {}
-"omni.usd.schema.metrics.assembler" = {}
-"omni.warp.core" = {}
+# "omni.rtx.settings.core" = {}
+# "omni.uiaudio" = {}
+# "omni.usd.metrics.assembler.ui" = {}
+# "omni.usd.schema.metrics.assembler" = {}
+# "omni.warp.core" = {}
 
 ########################
 # Isaac Lab Extensions #
@@ -174,7 +173,7 @@ file.ignoreUnsavedOnExit = true
 font.file = "${fonts}/OpenSans-SemiBold.ttf"
 font.size = 16
 gatherRenderResults = true # True to prevent artifacts in multiple viewport configurations, can be set to false for better performance in some cases
-hangDetector.enabled = true
+hangDetector.enabled = false
 hangDetector.timeout = 120
 player.useFixedTimeStepping = true
 settings.fabricDefaultStageFrameHistoryCount = 3 # needed for omni.syntheticdata TODO105 still true?
@@ -188,6 +187,10 @@ asyncRenderingLowLatency = false
 [settings.app.window]
 iconPath = "${isaacsim.simulation_app}/data/omni.isaac.sim.png"
 title = "Isaac Sim"
+width = 1280
+height = 1440
+x = 1280
+y = 728
 
 [settings.app.python]
 # These disable the kit app from also printing out python output, which gets confusing
@@ -280,7 +283,6 @@ folders = [
     "${exe-path}/../isaacsim/extsPhysics",  # isaac physics extensions for pip
     "${app}", # needed to find other app files
     "${app}/../source", # needed to find extensions in Isaac Lab
-    "/home/geon/kit-app-template/source/extensions",
 ]
 
 [settings.physics]
