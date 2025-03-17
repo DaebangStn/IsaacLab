@@ -1,0 +1,38 @@
+# Copyright (c) 2022-2025, The Isaac Lab Project Developers.
+# All rights reserved.
+#
+# SPDX-License-Identifier: BSD-3-Clause
+
+[package]
+title = "Marker Position Plotter"
+version = "0.1.0"
+description = "A simple extension to plot marker positions in real-time for IsaacLab environments"
+category = "Visualization"
+changelog = "docs/CHANGELOG.md"
+icon = "data/icon.png"
+keywords = ["visualization", "plot", "marker", "isaaclab", "extension"]
+preview_image = "data/preview.png"
+readme = "docs/README.md"
+
+[dependencies]
+"omni.kit.uiapp" = {}
+"omni.ui" = {}
+
+[settings]
+
+[[python.module]]
+name = "markerplotter"
+
+[documentation]
+pages = [
+    "docs/README.md",
+    "docs/CHANGELOG.md",
+]
+
+[[test]]
+dependencies = [
+    "omni.kit.test",
+    "omni.kit.ui_test"
+]
+
+args = []
